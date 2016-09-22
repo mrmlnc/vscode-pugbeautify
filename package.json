@@ -2,7 +2,7 @@
   "name": "vscode-pugbeautify",
   "displayName": "Pug beautify",
   "description": "Simple Pug/Jade beautify",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "publisher": "mrmlnc",
   "license": "MIT",
   "engines": {
