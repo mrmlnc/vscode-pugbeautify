@@ -1,0 +1,70 @@
+{
+  "name": "vscode-pugbeautify",
+  "displayName": "Pug beautify",
+  "description": "Simple Pug/Jade beautify",
+  "version": "1.0.0",
+  "publisher": "mrmlnc",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.4.0"
+  },
+  "icon": "icon.png",
+  "homepage": "https://github.com/mrmlnc/vscode-pugbeautify/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrmlnc/vscode-pugbeautify"
+  },
+  "keywords": [
+    "pug",
+    "jade",
+    "format",
+    "beautify",
+    "beautifier"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:pugbeautify.execute"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "pugbeautify.execute",
+      "title": "Beautify pug/jade"
+    }],
+    "configuration": {
+      "type": "object",
+      "title": "pugbeautify configuration options",
+      "properties": {
+        "pugbeautify.fillTab": {
+          "type": ["boolean", "null"],
+          "default": null,
+          "description": "Indent with Tabs, if false, with spaces."
+        },
+        "pugbeautify.omitDiv": {
+          "type": "boolean",
+          "default": false,
+          "description": "Omit div tag when it has id or class."
+        },
+        "pugbeautify.tabSize": {
+          "type": ["number", "null"],
+          "default": null,
+          "description": "When `fillTab` is false, fill `tabSize` spaces."
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "vscode": "^0.11.0",
+    "typescript": "^2.0.0",
+    "tslint": "3.15.0"
+  },
+  "dependencies": {
+    "pug-beautify": "0.1.1"
+  },
+  "scripts": {
+    "test": "tslint src/**/*.ts",
+    "build": "npm run test && tsc"
+  }
+}
