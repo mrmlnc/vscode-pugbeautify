@@ -1,5 +1,7 @@
 # vscode-pugbeautify
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mrmlnc/vscode-pugbeautify.svg)](https://greenkeeper.io/)
+
 > [pug-beautify](https://github.com/vingorius/pug-beautify) plugin for VS Code.
 
 ![vscode-pugbeautify](https://cloud.githubusercontent.com/assets/7034281/18758177/a593dace-80ff-11e6-86e9-07a1d3240081.gif)
